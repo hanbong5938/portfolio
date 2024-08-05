@@ -6,7 +6,7 @@ import {About, Contact, Home, Projects} from './pages';
 const App: React.FC = () => {
     return (
         <main className="bg-slate-300/20 min-h-screen">
-            <BrowserRouter>
+            <BrowserRouter basename={'/'}>
                 <Navbar/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
