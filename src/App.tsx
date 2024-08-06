@@ -6,8 +6,8 @@ import {About, Contact, Home, Projects} from './pages';
 const App: React.FC = () => {
     return (
         <main className="bg-slate-300/20 min-h-screen">
-            <BrowserRouter>
-                <Navbar/>
+            <BrowserRouter basename="/portfolio">
+            <Navbar/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/about" element={<About/>}/>
