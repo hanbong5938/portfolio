@@ -1,7 +1,8 @@
 import {Suspense, useState} from 'react';
 import {Canvas} from '@react-three/fiber';
 import {HomeInfo, Loader} from '../components';
-import {SeeHouse, Sky} from '../models';
+import {SeaHouse, Sky, Spongebob} from '../models';
+import * as THREE from 'three';
 import {Vector3} from 'three';
 
 const Home = () => {
@@ -10,16 +11,22 @@ const Home = () => {
     const MOBILE_SCALE: Vector3 = new Vector3(0.8, 0.8, 0.8);
     const DESKTOP_SCALE: Vector3 = new Vector3(1, 1, 1);
     const POSITION: Vector3 = new Vector3(0, -100, -350);
+    const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
 
+    const adjustSpongebobForScreenSize = () => {
+        return [new Vector3(...isMobile ? [0.003, 0.003, 0.003] : [0.003, 0.003, 0.003]),
+            new Vector3(...isMobile ? [1.5, 1.5, 1.5] : [0, -1.6, 1.5])];
+    };
     const adjustSeaHouseForScreenSize = (): [Vector3, Vector3] => {
-        const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
         const scale: Vector3 = isMobile ? MOBILE_SCALE : DESKTOP_SCALE;
         return [POSITION, scale];
     };
 
+    const [spongebobScale, spongebobPosition] = adjustSpongebobForScreenSize();
     const [seaHousePosition, seaHouseScale] = adjustSeaHouseForScreenSize();
     const [currentStage, setCurrentStage] = useState(1);
     const [isRotating, setIsRotating] = useState(false);
+    const [houseRotation, setHouseRotation] = useState(0);
 
     return (
         <section className={`${fullSize} relative`}>
@@ -48,14 +55,22 @@ const Home = () => {
                         intensity={1}
                     />
                     <Sky isRotating={isRotating}/>
-                    <SeeHouse
+                    <SeaHouse
                         isRotating={isRotating}
                         setIsRotating={setIsRotating}
                         currentFocusPoint={currentStage}
                         setCurrentStage={setCurrentStage}
                         position={seaHousePosition}
                         scale={seaHouseScale}
-                        rotation={[0.1, 4.7077, 0]}
+                        rotation={[0.1, 0, 0]}
+                        setHouseRotation={setHouseRotation}
+                    />
+                    <Spongebob
+                        isRotating={isRotating}
+                        position={spongebobPosition}
+                        rotation={new THREE.Euler(0, 20.1, 0)}
+                        scale={spongebobScale}
+                        houseRotation={houseRotation}
                     />
                 </Suspense>
             </Canvas>
