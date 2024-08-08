@@ -45,7 +45,7 @@ const Spongebob = ({ houseRotation, ...props }: SpongebobProps) => {
 
             const normalizedRotation = ((houseRotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
             const rotationDegrees = THREE.MathUtils.radToDeg(normalizedRotation);
-            setVisible(!(rotationDegrees >= 180 && rotationDegrees <= 270));
+            setVisible(!(rotationDegrees >= 250 && rotationDegrees <= 321));
         }
     });
 
