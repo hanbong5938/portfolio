@@ -1,10 +1,18 @@
 import {Link} from "react-router-dom";
 
 import {CTA} from "../components";
-import {projects} from "../constants";
 import {arrow} from "../assets/icons";
+import {useTranslation} from "react-i18next";
+import {projects} from "../constants";
+
+interface Project {
+    name: string;
+    description: string;
+}
 
 const Projects = () => {
+    const {t} = useTranslation();
+
     return (
         <section className='max-container'>
             <h1 className='head-text'>
@@ -15,18 +23,18 @@ const Projects = () => {
             </h1>
 
             <p className='text-slate-500 mt-2 leading-relaxed'>
-                저는 호기심을 바탕으로 도전하는 것을 좋아합니다.
-                학습에 대한 열정이 있고, 항상 새로운 지식을 탐구하는 것을 즐깁니다.</p>
+                {t('projects.description')}
+            </p>
 
             <div className='flex flex-wrap my-20 gap-16'>
-                {projects.map((project) => (
+                {(t('projects.list', {returnObjects: true}) as Project[]).map((project, index) => (
                     <div className='lg:w-[400px] w-full' key={project.name}>
                         <div className='block-container w-12 h-12'>
-                            <div className={`btn-back rounded-xl ${project.theme}`}/>
+                            <div className={`btn-back rounded-xl ${projects[index].theme}`}/>
                             <div className='btn-front rounded-xl flex justify-center items-center'>
                                 <img
-                                    src={project.iconUrl}
-                                    alt='threads'
+                                    src={projects[index].iconUrl}
+                                    alt='project icon'
                                     className='w-1/2 h-1/2 object-contain'
                                 />
                             </div>
@@ -39,7 +47,7 @@ const Projects = () => {
                             <p className='mt-2 text-slate-500'>{project.description}</p>
                             <div className='mt-5 flex items-center gap-2 font-poppins'>
                                 <Link
-                                    to={project.link}
+                                    to={projects[index].link}
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     className='font-semibold text-blue-600'

@@ -1,0 +1,89 @@
+{
+  "home": {
+    "hello": {
+      "prefix": "Hello, I am",
+      "suffix": ""
+    },
+    "name": "Hanbong Bae",
+    "position": "a Backend Developer.",
+    "about": {
+      "content": "I have honed diverse skills across various companies, enhancing my expertise in backend development.",
+      "button": "Discover More"
+    },
+    "projects": {
+      "content": "I have successfully spearheaded numerous projects with remarkable outcomes. Want to see the details?",
+      "button": "View My Work"
+    },
+    "contact": {
+      "content": "Looking for a developer or need help with a project? Let's get in touch!",
+      "button": "Reach Out"
+    }
+  },
+  "about": {
+    "description": "I am a software developer with 5 years of experience specializing in backend web services within startup environments. I excel in backend API development using Spring Boot and managing Linux servers. Known for my rapid development and debugging skills, I consistently meet challenging deadlines and deliver reliable, high-quality results. My ability to adapt and grow in fast-paced environments, coupled with my continuous learning and deep understanding of the latest technological trends, enables me to effectively solve complex problems. My technical skill set includes Java, Spring, MySQL, AWS services, and Spring Batch, with a strong focus on SQL query optimization. I have successfully led multiple projects with agile project management and demonstrated my ability to work effectively in team environments.",
+    "experience": "I have honed my skills working at various companies and collaborating with outstanding individuals.",
+    "list": [
+      {
+        "name": "Wecruit Co., Ltd.",
+        "points": [
+          "Utilized Gradle multi-modules for project implementation",
+          "Created a library using Apache POI for reading and outputting Excel files",
+          "Developed a library to read and send templates using SMTP mail",
+          "Implemented a code review process",
+          "Created a PDF generation API based on NestJS",
+          "Led the migration of services from Flask to Spring Boot",
+          "Used cache to improve read speed of rarely changing data and reduce server load",
+          "Transitioned to SSL OV certificates",
+          "Processed business logic separation using SMS and mail event listeners",
+          "Implemented detailed API access logging using Spring AOP",
+          "Applied bucket4j to limit the number of authentication attempts per IP",
+          "Integrated Flyway for DB maintenance",
+          "Implemented multiple server services on one server using Apache2 vhost",
+          "Migrated from Apache2 to Nginx and automated SSL certificates using Nginx Proxy Manager and Let’s Encrypt Wildcard",
+          "Reduced the possibility of bottlenecks when using external APIs by transitioning from REST TEMPLATE to Web Client",
+          "Implemented Spring Open API 3.0 for automatic documentation to collaborate with frontend developers",
+          "Conducted stress tests, optimized connection pools, and removed deadlocks for LG recruitment system",
+          "Reduced server costs by 30% through strategic migration from GCP to AWS LightSail",
+          "Improved query speed by adding indexes and revising full-text search strategies",
+          "Introduced KISA's web firewall (Castle) and vulnerability assessment tool (Whistle)",
+          "Transitioned from Maven to Gradle, reducing build time by building only necessary parts",
+          "Improved scheduling efficiency by replacing traditional shell scripts calling Crontab API with Spring Batch"
+        ]
+      },
+      {
+        "name": "Sallyplan Co., Ltd.",
+        "points": [
+          "Implemented drag-and-drop functionality for data combination and retrieval in the EX-LIVE project and wrote documentation for future developers",
+          "Implemented SSH access and API in Spring",
+          "Converted a project with drag-and-drop functionality written in Vue.js to jQuery",
+          "Modified syntax and CSS for IE compatibility"
+        ]
+      },
+      {
+        "name": "Septem Co., Ltd.",
+        "points": [
+          "Implemented UI/UX using Vue.js in the CX-LIVE project",
+          "Implemented various data statistics using Chart.js",
+          "Collected user data using JavaScript for web replay"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "description": "I am driven by curiosity and love taking on challenges. I have a passion for learning and enjoy exploring new knowledge.",
+    "list": [
+      {
+        "name": "Excel Util",
+        "description": "A library for reading and outputting Excel file data"
+      },
+      {
+        "name": "Fc Bayern Fan Site",
+        "description": "Built a soccer fan community site using the MVC model with Spring Boot framework"
+      },
+      {
+        "name": "Job Information Site",
+        "description": "Built a job information site using the MVC model with Spring framework"
+      }
+    ]
+  }
+}
