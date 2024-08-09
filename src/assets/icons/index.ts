@@ -22,6 +22,7 @@ import docker from './docker.svg';
 import football from './football.svg';
 import job from './job.svg';
 import excel from './excel.svg';
+import sass from './sass.svg';
 
 export {
   css,
@@ -48,4 +49,5 @@ export {
   football,
   excel,
   job,
+  sass,
 };
