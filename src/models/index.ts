@@ -1,5 +1,5 @@
-import Sky from "./Sky";
-import SeaHouse from "./SeaHouse.tsx";
-import Spongebob from "./Spongebob.tsx";
+import Sky from './Sky';
+import SeaHouse from './SeaHouse.tsx';
+import Spongebob from './Spongebob.tsx';
 
-export {Sky, SeaHouse, Spongebob}
+export { Sky, SeaHouse, Spongebob };

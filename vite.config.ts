@@ -1,9 +1,9 @@
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/portfolio/', // your repository name
-    plugins: [react()],
-    assetsInclude: ['**/*.glb'],
+  base: '/portfolio/', // your repository name
+  plugins: [react()],
+  assetsInclude: ['**/*.glb'],
 });

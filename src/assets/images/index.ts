@@ -1,15 +1,6 @@
-// @ts-ignore
-import hero from './hero.jpg'
-// @ts-ignore
-import sallyplan from './sallyplan.png'
-// @ts-ignore
-import septem from './septem.png'
-// @ts-ignore
-import wecruit from './wecruit.png'
+import hero from './hero.jpg';
+import sallyplan from './sallyplan.png';
+import septem from './septem.png';
+import wecruit from './wecruit.png';
 
-export {
-    hero,
-    sallyplan,
-    septem,
-    wecruit,
-}
+export { hero, sallyplan, septem, wecruit };
