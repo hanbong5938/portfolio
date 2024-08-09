@@ -16,6 +16,8 @@ The following items are core frontend technologies used in this project (2024):
 - **React-Router-Dom**: A collection of navigational components for React.
 - **i18next**: An internationalization framework.
 - **eslint/prettier**: Linting and code formatting tools to maintain code quality.
+- **Husky: A tool for managing Git hooks, enabling pre-commit checks to enforce code quality.
+
 
 ---
 
