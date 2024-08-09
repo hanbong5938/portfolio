@@ -8,7 +8,7 @@ import seeHouseScene from '../assets/3d/sea_house.glb';
 interface SeaHouseProps extends GroupProps {
   isRotating: boolean;
   setIsRotating: (rotating: boolean) => void;
-  currentFocusPoint: number;
+  currentFocusPoint: number | null;
   setCurrentStage: React.Dispatch<React.SetStateAction<number | null>>;
   setHouseRotation: React.Dispatch<React.SetStateAction<number>>;
 }

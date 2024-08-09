@@ -28,7 +28,7 @@ const Home = () => {
 
   const [spongebobScale, spongebobPosition] = adjustSpongebobForScreenSize();
   const [seaHousePosition, seaHouseScale] = adjustSeaHouseForScreenSize();
-  const [currentStage, setCurrentStage] = useState(1);
+  const [currentStage, setCurrentStage] = useState<number | null>(1);
   const [isRotating, setIsRotating] = useState(false);
   const [houseRotation, setHouseRotation] = useState(0);
 
