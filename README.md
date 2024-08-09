@@ -24,8 +24,8 @@ The following items are core frontend technologies used in this project (2024):
 ```
  +- Build  -+        +--  CI  --+             +----  CD  ----+
 |           |        |          |             |              |
-|   Vite    |  push  |  Github  |  deploy     | Github Pages  |
-|  React    |  --->  |  Action  |   ---->     |               |
-| TypeScript|        |          |             |               |
+|   Vite    |  push  |  Github  |  deploy     | Github Pages |
+|  React    |  --->  |  Action  |   ---->     |              |
+| TypeScript|        |          |             |              |
 +-----------+        +----------+             +--------------+
 ```
