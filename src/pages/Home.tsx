@@ -1,7 +1,7 @@
 import { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { HomeInfo, Loader } from '../components';
-import { SeaHouse, Sky, Spongebob } from '../models';
+import { SeaHouse, Sky, Spongebob, PatrickStar } from '../models';
 import * as THREE from 'three';
 import { Vector3 } from 'three';
 
@@ -11,9 +11,10 @@ const Home = () => {
   const MOBILE_SCALE: Vector3 = new Vector3(0.8, 0.8, 0.8);
   const DESKTOP_SCALE: Vector3 = new Vector3(1, 1, 1);
   const POSITION: Vector3 = new Vector3(0, -100, -350);
+  const characterRotation = new THREE.Euler(0, 20.1, 0);
   const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
 
-  const adjustSpongebobForScreenSize = () => {
+  const adjustmentCharacter = () => {
     return [
       new Vector3(
         ...(isMobile ? [0.003, 0.003, 0.003] : [0.003, 0.003, 0.003]),
@@ -21,12 +22,13 @@ const Home = () => {
       new Vector3(...(isMobile ? [1.5, 1.5, 1.5] : [0, -1.6, 1.5])),
     ];
   };
+
   const adjustSeaHouseForScreenSize = (): [Vector3, Vector3] => {
     const scale: Vector3 = isMobile ? MOBILE_SCALE : DESKTOP_SCALE;
     return [POSITION, scale];
   };
 
-  const [spongebobScale, spongebobPosition] = adjustSpongebobForScreenSize();
+  const [spongebobScale, characterPosition] = adjustmentCharacter();
   const [seaHousePosition, seaHouseScale] = adjustSeaHouseForScreenSize();
   const [currentStage, setCurrentStage] = useState<number | null>(1);
   const [isRotating, setIsRotating] = useState(false);
@@ -71,8 +73,15 @@ const Home = () => {
           />
           <Spongebob
             isRotating={isRotating}
-            position={spongebobPosition}
-            rotation={new THREE.Euler(0, 20.1, 0)}
+            position={characterPosition}
+            rotation={characterRotation}
+            scale={spongebobScale}
+            houseRotation={houseRotation}
+          />
+          <PatrickStar
+            isRotating={isRotating}
+            position={characterPosition}
+            rotation={characterRotation}
             scale={spongebobScale}
             houseRotation={houseRotation}
           />
