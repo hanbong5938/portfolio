@@ -26,49 +26,49 @@
       {
         "name": "Wecruit Co., Ltd.",
         "points": [
-          "Developed Excel Library: Utilized Apache POI to create a library providing Excel reading and writing functionalities.",
-          "Created MAIL Library: Developed a library for reading and sending email templates using SMTP.",
-          "Implemented Code Review Process: Introduced code review procedures to enhance code quality management efficiently.",
-          "Built PDF Generation API with NestJS: Developed a PDF generation API leveraging the NestJS framework.",
-          "Optimized PDF Generation Performance with gRPC: Enhanced PDF generation performance by integrating gRPC.",
-          "Executed Blue-Green Deployment Using Shell Scripts: Applied Blue-Green deployment strategies and shell scripting to achieve zero-downtime deployments.",
-          "Led Service Migration from Flask to Spring Boot: Migrated services from Flask to Spring Boot, improving system stability and scalability.",
-          "Implemented Caching Mechanism: Applied caching to frequently unchanging data, enhancing read speeds and reducing server load.",
-          "Upgraded Security with SSL OV Certificates: Enhanced system security by transitioning to SSL OV certificates.",
-          "Adopted Event-Driven Architecture: Utilized SMS and MAIL event listeners to decouple business logic, improving system modularity.",
-          "Implemented Logging with AOP: Employed Spring AOP to create detailed API access logs for better monitoring and debugging.",
-          "Restricted Authentication Transmission Frequency: Applied Bucket4j to limit the number of authentication code transmissions per IP address.",
-          "Automated Database Maintenance with Flyway: Integrated Flyway to automate database maintenance tasks.",
-          "Consolidated Servers Using Apache2 vHosts: Deployed multiple services on a single server through Apache2 virtual hosts.",
-          "Automated SSL Certificate Management: Migrated from Apache2 to Nginx, introduced Wildcard SSL, and implemented automated Let’s Encrypt SSL certificates via Nginx Proxy Manager.",
-          "Optimized External APIs: Minimized business logic impact of external notification APIs by leveraging asynchronous @EventListener and WebClient, and implemented batch retry handling for failed sends.",
-          "Implemented Automated Documentation: Utilized Spring Open API 3.0 to generate automated documentation, facilitating collaboration with front-end developers.",
-          "Provided OpenAPI Services: Conducted stress testing for LG's recruitment system application, optimized connection pools, and eliminated deadlocks to ensure reliable OpenAPI services.",
-          "Achieved Cost Efficiency: Strategically migrated from GCP to AWS LightSail, reducing server costs by 30%.",
-          "Enhanced Database Performance: Improved query speeds by adding indexes and modifying Full Text Search strategies.",
-          "Strengthened Security Measures: Introduced KISA's web firewall (Castle) and vulnerability assessment tool (Whistle) to bolster security.",
-          "Improved Build Efficiency: Transitioned from Maven to Gradle, enabling selective builds and significantly reducing build times.",
-          "Optimized Scheduling Processes: Replaced traditional Crontab shell scripts with Spring Batch, enhancing scheduling efficiency, preventing external access, and improving environment portability."
+          "Applied Bean-based dynamic configuration for Indonesian overseas services, enabling flexible external API calls and cost reduction.",
+          "Conducted load testing for Open API service stability, optimized Connection Pool, and eliminated deadlocks.",
+          "Minimized transaction scope to reduce unnecessary usage, improving performance and resource efficiency.",
+          "Enhanced data processing speed by 200% through Spring Batch Writer modification.",
+          "Migrated to a cloud environment for cost reduction (GCP -> AWS Lightsail).",
+          "Improved development collaboration efficiency through API design and documentation automation.",
+          "Optimized development and deployment speed by switching build tools from Maven to Gradle.",
+          "Implemented KISA’s web firewall (Castle) and vulnerability assessment tool (Whistle).",
+          "Improved stability and maintainability by transitioning from Crontab API calls to Spring Batch.",
+          "Applied index tuning and table normalization, enhancing query execution speed and optimizing resource usage.",
+          "Completely redeveloped Flask-based services into a Spring Boot / JPA environment.",
+          "Optimized data retrieval performance through caching.",
+          "Normalized inefficient table structures to eliminate duplicate data and ensure data integrity during migration.",
+          "Applied domain-based packaging to improve core logic discovery speed and maintainability.",
+          "Introduced a code review process within the organization, enhancing code quality and maintainability.",
+          "Designed high-performance services through experience in developing gRPC and NestJS-based APIs.",
+          "Optimized DevOps operations through experience with Blue-Green deployment strategies.",
+          "Enhanced scalability by applying a Gradle-based multi-module architecture.",
+          "Improved code readability and maintainability by separating domains based on DDD principles.",
+          "Automated data migration to increase operational efficiency.",
+          "Maintained security and reduced management costs through SSL certificate automation.",
+          "Designed an event-driven asynchronous system.",
+          "Experienced in building AOP-based logging systems.",
+          "Applied API security measures and request rate-limiting strategies."
         ]
       },
       {
         "name": "Sallyplan Co., Ltd.",
         "points": [
-          "Implemented drag-and-drop functionality for data combination and retrieval in the EX-LIVE project and wrote documentation for future developers",
-          "Implemented SSH access and API in Spring",
-          "Converted a project with drag-and-drop functionality written in Vue.js to jQuery",
-          "Modified syntax and CSS for IE compatibility"
+          "Implemented data combination functionality using drag-and-drop in the EX-LIVE project and automated developer documentation.",
+          "Executed remote commands via SSH in a Spring environment and integrated with APIs.",
+          "Converted Vue.js-based drag-and-drop functionality to jQuery for cross-browser compatibility.",
+          "Refactored code and optimized CSS to enhance IE compatibility."
         ]
       },
       {
         "name": "Septem Co., Ltd.",
         "points": [
-          "Implemented UI/UX using Vue.js in the CX-LIVE project",
-          "Implemented various data statistics using Chart.js",
-          "Collected user data using JavaScript for web replay"
+          "Implemented UI/UX using Vue.js in the CX-LIVE project and enhanced user experience with dynamic components.",
+          "Optimized data visualization and improved dashboard performance using Chart.js.",
+          "Developed a web replay system and collected user behavior data using JavaScript."
         ]
-      }
-    ]
+      }    ]
   },
   "projects": {
     "description": "I am driven by curiosity and love taking on challenges. I have a passion for learning and enjoy exploring new knowledge.",
